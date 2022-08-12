@@ -16,4 +16,31 @@ class MainActivity : AppCompatActivity() {
         super.onStart()
         Log.w("lifecycle", "entrei no START - deixei a tela vicivel para voçê")
     }
+
+    override fun onResume() {
+        super.onResume()
+        Log.w("lifecycle", "entrei no RESUME - agora voce pode iteragir com a tela")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.w("lifecycle", "PAUSE - a tea perdeu o foco, voce nao pode mais interagir")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.w("lifecycle", "STOP - a tela nã está vicivel mas ainda existe")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.w("lifecycle", "entrei no RESTART - a tela esta retornando ao foco")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.w("lifecycle", "entrei no DESTROY - a tela foi destruída")
+    }
+
+
 }
