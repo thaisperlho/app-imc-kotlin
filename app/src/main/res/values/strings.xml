@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">imc-app</string>
+    <string name="tv_title">IMC</string>
+    <string name="hint_peso">Peso (ex: 65.8kg)</string>
+    <string name="hint_altura">Altura (ex: 1.70m)</string>
+    <string name="calcular">Calcular</string>
 </resources>
